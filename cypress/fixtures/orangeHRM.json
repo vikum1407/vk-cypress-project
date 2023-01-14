@@ -1,0 +1,9 @@
+{
+    "username": "admin",
+    "password": "admin123",
+    "expected": "Dashboard",
+
+    "invalidPW": "admin1qaz",
+    "invalidUS": "admin12"
+  }
+  
