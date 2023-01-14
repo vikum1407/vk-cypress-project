@@ -41,9 +41,14 @@ describe('Login Page', () => {
     /*
     it('OrageHRM Login - Login Validation',() =>{
       cy.visit("https://opensource-demo.orangehrmlive.com/")
-      cy.get("input[placeholder='Username']").type("admin")
-      cy.get("input[placeholder='Password']").type("admin123")
-      cy.get("button[type='submit']").click()
+      cy.fixture('orangeHRM').then((data)=>{
+
+      ln.SetUsername(data.username)
+      ln.SetPassword(data.password)
+      ln.ClickLogin();
+      ln.VerifyLogin();
+
+     })
 
       let expName="PaulS CollingsS";
 
